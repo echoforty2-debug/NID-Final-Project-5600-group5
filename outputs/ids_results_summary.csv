@@ -1,0 +1,10 @@
+Model,Strategy,Precision,Recall,F1,ROC-AUC,PR-AUC,FPR,Brier Score,Train Time (s),Calibrated
+LightGBM,Class Weight,0.8669,0.8515,0.8591,0.9546,0.9178,0.0404,0.0588,2.1,No
+XGBoost,Class Weight,0.8707,0.8498,0.8601,0.9534,0.9169,0.039,0.0587,5.6,No
+CatBoost,Class Weight,0.876,0.8453,0.8604,0.9521,0.9101,0.037,0.0608,7.2,No
+LightGBM+SMOTE,SMOTE,0.8669,0.8515,0.8591,0.9525,0.9155,0.0404,0.0585,5.7,No
+LightGBM (uncalibrated),Class Weight,0.8737,0.8489,0.8611,0.953,0.9143,0.038,0.0598,-,Yes
+LightGBM + Platt,Class Weight,0.9212,0.8334,0.8751,0.953,0.9143,0.0221,0.0501,-,Yes
+LightGBM + Isotonic,Class Weight,0.9393,0.8099,0.8698,0.9529,0.9078,0.0162,0.0489,-,Yes
+XGBoost (uncalibrated),Class Weight,0.8648,0.8506,0.8577,0.9522,0.9162,0.0411,0.0585,-,Yes
+XGBoost + Platt,Class Weight,0.9046,0.8393,0.8707,0.9522,0.9162,0.0274,0.0506,-,Yes
